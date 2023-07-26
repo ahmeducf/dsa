@@ -1,3 +1,5 @@
+// Time Complexity: O(n)
+// Space Complexity: O(n)
 function merge(left, right) {
   const sorted = [];
 
@@ -20,7 +22,8 @@ function merge(left, right) {
   return [...sorted, ...left.slice(leftIndex), ...right.slice(rightIndex)];
 }
 
-
+// Time Complexity: O(n log n)
+// Space Complexity: O(n)
 function mergeSort(arr) {
   if (arr.length < 2) return arr;
 
